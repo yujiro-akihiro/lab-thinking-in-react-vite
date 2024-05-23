@@ -1,13 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+// main.jsx
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-root.render(
+
+const rootStyle = {
+  background: "linear-gradient(to bottom right, #000080, #87CEEB)",
+  minHeight: "100vh"
+};
+
+
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <div style={rootStyle}>
+      <App />
+    </div>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
-
